@@ -1,0 +1,11 @@
+.sidebar-menu a {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.sidebar-menu a:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: #202c32;  /*#37474f*/
+}

@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  private isToggled: boolean;
+
+  onToggleClick() {
+    this.isToggled = !this.isToggled;
+    if(this.isToggled) {
+
+    } else {
+
+    }
+
+    console.log("onToggleClick" + this.isToggled);
+
+
+  }
 }
