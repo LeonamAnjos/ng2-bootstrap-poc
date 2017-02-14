@@ -1,11 +1,30 @@
+.sidebar-menu {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .sidebar-menu a {
   color: rgba(255, 255, 255, 0.7);
   display: block;
-  padding: 12px;
+  padding: 12px 20px;
   text-decoration: none;
 }
 
 .sidebar-menu a:hover {
   color: rgba(255, 255, 255, 1);
-  background-color: #202c32;  /*#37474f*/
+  background-color: #202c32;
 }
+
+.sidebar-menu > a > i {
+  margin-right: 8px;
+}
+
+.sidebar-menu > .menu-header {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 1.82;
+  padding: 10px 20px;
+}
+
