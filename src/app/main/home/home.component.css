@@ -5,3 +5,9 @@
 .card-img-top {
   max-width: 100%;
 }
+
+@media (min-width: 576px) {
+  .card-deck .card:not(:last-child) {
+    margin-right: 0;
+  }
+}
