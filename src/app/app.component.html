@@ -1,10 +1,11 @@
-<app-navbar></app-navbar>
-<a class="sidebar-toggle" (click)="onToggleClick()">
-  <i class="fa fa-bars fa-lg"></i>
-</a>
 <div id="wrapper" class="wrapper" [ngClass]="{'toggled': isToggled}">
+  <a class="sidebar-toggle" (click)="onToggleClick()">
+    <i class="fa fa-bars fa-lg"></i>
+  </a>
+
   <app-sidebar></app-sidebar>
   <div id="main" class="content">
+    <app-navbar></app-navbar>
     <router-outlet></router-outlet>
   </div>
 </div>

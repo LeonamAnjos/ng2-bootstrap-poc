@@ -1,7 +1,13 @@
 .sidebar-toggle {
   position: absolute;
   top: 16px;
-  left: 16px;
+  left: 250px;
+  z-index: 1;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .sidebar-toggle i {
@@ -10,6 +16,10 @@
 
 .sidebar-toggle i:hover {
   color: rgba(255, 255, 255, 1);
+}
+
+.toggled > .sidebar-toggle {
+  left: 16px;
 }
 
 .wrapper > .content {
