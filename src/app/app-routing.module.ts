@@ -11,10 +11,12 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
+export const routedComponents = [ HomeComponent ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
 
-export const routedComponents = [ HomeComponent ];
+
