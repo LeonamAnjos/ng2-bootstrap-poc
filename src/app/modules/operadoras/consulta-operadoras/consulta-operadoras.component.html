@@ -17,42 +17,25 @@
 <div class="container-fluid" style="padding-top: 15px;">
 
   <div class="card hoverable">
-    <div class="card-block">
-      <table class="table table-sm table-hover">
-        <thead>
-        <tr>
-          <th>#</th>
-          <th>Reg. ANS</th>
-          <th>CNPJ</th>
-          <th>Razão Social</th>
-          <th>Classificação</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>00052-9</td>
-          <td>04.644.050/0001-70</td>
-          <td>Seguro Saúde S.A.</td>
-          <td>Seguradora Especializada</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>00302-2</td>
-          <td>04.656.030/0001-60</td>
-          <td>Medicina de Grupo Saúde S.A.</td>
-          <td>Medicina de Grupo</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>00442-4</td>
-          <td>04.356.330/0001-65</td>
-          <td>Autogestão Saúde S.A.</td>
-          <td>Autogestão</td>
-        </tr>
-        </tbody>
-      </table>
+
+    <ng2-smart-table [settings]="settings" [source]="source"></ng2-smart-table>
+
+    <div class="card-footer text-muted">
+
+      <div class="input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+        <input #search class="search" type="text" placeholder=" Procurar no grid..." (keydown.enter)="onSearch(search.value)">
+      </div>
+
     </div>
+
+
   </div>
 
 </div>
+
+
+
+
+
+

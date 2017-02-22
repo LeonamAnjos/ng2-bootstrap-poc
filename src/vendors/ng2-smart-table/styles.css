@@ -1,0 +1,24 @@
+.ng2-smart-table {
+  border: hidden !important;
+}
+
+a.ng2-smart-action, a.ng2-smart-sort-link {
+  margin: 0 1px 0 1px;
+  color: #263238;
+}
+
+a.ng2-smart-action:hover, a.ng2-smart-sort-link:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+nav.ng2-smart-pagination-nav {
+  position: absolute;
+  bottom: -5px;
+  right: 20px;
+  z-index: 1;
+}
+
+ul.ng2-smart-pagination {
+  display: inline-flex !important;
+}

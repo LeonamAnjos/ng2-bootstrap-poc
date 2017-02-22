@@ -10,23 +10,24 @@ import { NavbarComponent } from './main/navbar/navbar.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { LogService } from "./shared/log.service";
 import { PageHeaderComponent } from './shared/page-header/page-header.component';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidebarComponent,
-    routedComponents,
-    PageHeaderComponent,
+    routedComponents
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    SharedModule,
     Ng2BreadcrumbModule.forRoot()
   ],
-  providers: [LogService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
