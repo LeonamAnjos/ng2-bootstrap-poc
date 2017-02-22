@@ -9,6 +9,7 @@ import { AppRoutingModule, routedComponents } from "./app-routing.module";
 import { NavbarComponent } from './main/navbar/navbar.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { LogService } from "./shared/log.service";
+import { PageHeaderComponent } from './shared/page-header/page-header.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LogService } from "./shared/log.service";
     NavbarComponent,
     SidebarComponent,
     routedComponents,
+    PageHeaderComponent,
   ],
   imports: [
     BrowserModule,
