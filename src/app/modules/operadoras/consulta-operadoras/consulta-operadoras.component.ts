@@ -31,7 +31,8 @@ export class ConsultaOperadorasComponent implements OnInit {
     },
 
     actions: {
-      add: false
+      columnTitle: 'Ações'
+
     },
 
     mode: 'external',
