@@ -1,39 +1,51 @@
-# Dependências
+# FxSaúde
+
+
+## Instalação
+
+### Node.js
+Instale o [Node][njs] versão 6.9.0 ou superior.
+Depois de instalado, verifique a versão do NPM.
+```sh
+$ npm --version
+```
+Se a versão for inferior a 3.0.0, será necessário atualizar a versão com o comando abaixo:
+```sh
+$ npm install npm@latest -g
+```
+
+### Angular CLI
+Instale a última versão do [Angular CLI][ag-install] com o comando abaixo:
+```sh
+$ npm install -g @angular/cli@latest
+```
+Mais informações sobre o Angular CLI na [wiki][ag-wiki] do projeto.
+
+### FxSaúde
+Você pode clonar ou fazer o download do projeto que está [github][fx-repo].
+```sh
+$ git clone https://github.com/LeonamAnjos/ng2-bootstrap-poc.git
+```
+Com o repositório baixado, acesse a pasta e instale as dependências.
+```sh
+$ cd ng2-bootstrap-poc
+$ npm install
+```
+Pronto! Basta subir o servidor que a aplicação estará disponível no endereço http://localhost:4200.
+```sh
+$ ng server
+```
+
+
+## Outras dependências
 
 Tabelas: ng2-smart-table
 https://akveo.github.io/ng2-smart-table/demo
 
 
 
+[njs]: <https://nodejs.org/en/>
+[ag-install]: <https://github.com/angular/angular-cli#installation>
+[ag-wiki]: <https://github.com/angular/angular-cli/wiki>
+[fx-repo]: <https://github.com/LeonamAnjos/ng2-bootstrap-poc/>
 
-# Ng2BootstrapPoc
-
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
-
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
